@@ -1,3 +1,9 @@
+usb-modeswitch-data (20191128-4deepin1) unstable; urgency=medium
+
+  * add-adaption-to-Realtek-rtl8821cu patch
+
+ -- LiChengGang <lichenggang@uniontech.com>  Thu, 28 Mar 2024 19:12:33 +0800
+
 usb-modeswitch-data (20191128-4) unstable; urgency=medium
 
   * Orphan package
