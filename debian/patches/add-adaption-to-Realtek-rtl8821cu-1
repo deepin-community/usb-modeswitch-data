@@ -1,0 +1,23 @@
+
+--- usb-modeswitch-data-20191128.orig/40-usb_modeswitch.rules
++++ usb-modeswitch-data-20191128/40-usb_modeswitch.rules
+@@ -1256,4 +1256,7 @@ ATTR{idVendor}=="8888", ATTR{idProduct}=
+ # Aiko 81D, fw with wrong vendor ID
+ ATTR{idVendor}=="ed09", ATTR{idProduct}=="1021", RUN+="usb_modeswitch '/%k'"
+ 
++# Realtek rtl8821c
++ATTR{idVendor}=="0bda", ATTR{idProduct}=="1a2b", RUN+="usb_modeswitch '/%k'"
++
+ LABEL="modeswitch_rules_end"
+--- usb-modeswitch-data-20191128.orig/usb_modeswitch.d/0bda:1a2b
++++ usb-modeswitch-data-20191128/usb_modeswitch.d/0bda:1a2b
+@@ -1,6 +1,4 @@
+-# D-Link DWA-171 Wifi Dongle
+-TargetVendor=0x2001
+-TargetProduct=0x331d
++# Realtek rtl8821cu
++TargetVendor=0x0bda
++TargetProduct=0xc820
+ StandardEject=1
+-
+-
